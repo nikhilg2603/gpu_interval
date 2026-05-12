@@ -1,0 +1,2 @@
+ProblemName,Algorithm,Interval_Size,Iterations,FuncValue,Gradient,TimeTaken(s),Initial Guess,HessianModified,FunctionEval,GradientEval,Min_Eigen_Value,Solved,Cholesky_Result,Max_Iterations,Time_Limit,Descent_Direction,Small Step SizeDifference in Hessian
+1_ex4_1_1.txt,On2 Interval hessian,0.1,9,-7.48731,3.72445e-07,0.0016316,-3.12698,8,9,9,80.409,Yes,Indefinite,No,No,No,No,0.425336

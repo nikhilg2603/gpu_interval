@@ -1,0 +1,2 @@
+ProblemName,Algorithm,Interval_Size,Iterations,FuncValue,Gradient,TimeTaken(s),Initial Guess,HessianModified,FunctionEval,GradientEval,Min_Eigen_Value,Solved,Cholesky_Result,Max_Iterations,Time_Limit,Descent_Direction,Small Step SizeDifference in Hessian
+20_s303.txt,On2 Interval hessian,0.1,10001,0.0128088,0.226352,37.0812,225.529,8562,10001,10001,2,No,Indefinite,Yes,No,No,No,2.89638e+06

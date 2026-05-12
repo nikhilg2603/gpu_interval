@@ -1,0 +1,2 @@
+ProblemName,Algorithm,Interval_Size,Iterations,FuncValue,Gradient,TimeTaken(s),Initial Guess,HessianModified,FunctionEval,GradientEval,Min_Eigen_Value,Solved,Cholesky_Result,Max_Iterations,Time_Limit,Descent_Direction,Small Step SizeDifference in Hessian
+100_harkerp2.txt,On2 Interval hessian,0.1,10001,627357,1089.82,1306.6,122.066,9419,10001,10001,6.16876e-05,No,Indefinite,Yes,No,No,No,192453

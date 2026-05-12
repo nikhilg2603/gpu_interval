@@ -1,0 +1,1 @@
+  -L/usr/local/lib  -Wl,-rpath,/usr/local/lib /usr/local/lib/libgaol.so /usr/local/lib/libultim.so /usr/local/lib/libgdtoa.so "/usr/lib/x86_64-linux-gnu/libginac.so" "/usr/lib/x86_64-linux-gnu/libcln.so" -lm -lstdc++fs -lcudadevrt -lcudart_static -lrt -lpthread -ldl 

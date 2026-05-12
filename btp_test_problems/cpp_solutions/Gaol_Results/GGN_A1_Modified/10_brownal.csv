@@ -1,0 +1,2 @@
+ProblemName,Algorithm,Interval_Size,Iterations,FuncValue,Gradient,TimeTaken(s),Initial Guess,HessianModified,FunctionEval,GradientEval,Min_Eigen_Value,Solved,Cholesky_Result,Max_Iterations,Time_Limit,Descent_Direction,Small Step SizeDifference in Hessian
+10_brownal.txt,On2 Interval hessian,0.1,10001,1.36487e+07,681351,10.6399,-183.813,9998,10001,10001,0.0678551,No,Indefinite,Yes,No,No,No,2.277e+41
