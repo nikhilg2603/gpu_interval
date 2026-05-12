@@ -33,3 +33,66 @@ To compile the project, open your terminal in the project directory and use the 
 Always clean the directory before a fresh build to ensure object files (`.o`) are correctly generated:
 ```bash
 make clean
+```
+
+> **Note:** Running `make gaol_gpu` also works perfectly.
+
+This generates the final executable named `gaol_gpu`.
+
+---
+
+# Running the Solver
+
+The executable requires two directory paths passed as command-line arguments to locate the profile sets and test problems.
+
+## Command Syntax
+
+```bash
+./gaol_gpu <path_to_data_profile_set> <path_to_all_probs>
+```
+
+## Example Usage
+
+```bash
+./gaol_gpu ./data_profile_set ./all_probs
+```
+
+### Arguments
+
+- `./data_profile_set`  
+  Directory containing the initial guess configurations or specific profile definitions.
+
+- `./all_probs`  
+  Directory containing the raw benchmark problem files (e.g., `.txt` files specifying variable counts, function strings, and bounding domains).
+
+---
+
+# Output & Performance Metrics
+
+During execution, the solver outputs real-time console metrics tracking:
+
+- Initial starting vectors.
+- Matrix Definiteness checks (Cholesky results).
+
+## Execution Timers
+
+Separated timing outputs are provided to compare CPU vs. GPU bottlenecks:
+
+- `[GPU Kernel] Math Execution Time`  
+  Pure execution speed on the device.
+
+- `[Total Offload] Memcpy + Kernel Time`  
+  Full round-trip PCIe memory transfer + compute overhead.
+
+- `[CPU] GAOL Hessian Evaluation Time`  
+  Native host evaluation speed for comparison.
+
+---
+
+# Result Logging
+
+Results are fully logged to dynamically generated `.csv` files inside:
+
+```text
+btp_test_problems/cpp_solutions/Gaol_Results/GGN_A1_Modified/
+```
